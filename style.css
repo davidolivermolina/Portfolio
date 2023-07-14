@@ -1,0 +1,164 @@
+/* The navigation bar */
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  height: auto;
+  z-index: 10;
+}
+
+.navbar h2 {
+  color: aliceblue;
+  left: 5%;
+}
+
+.navbar h2 {
+  position: fixed;
+  width: auto;
+  top: -12px;
+  color: aliceblue;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: flex;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: aliceblue;
+  color: black;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  width: 100%;
+  border-style: solid;
+  max-width: auto;
+  margin: auto;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  border: 1px solid #040404;
+  background-color: white;
+  padding: 15px;
+}
+
+.aboutme {
+  display: flex;
+}
+
+.work {
+  display: flex;
+}
+
+.left {
+  width: 25%;
+  border-right: solid black 7px;
+}
+
+h1 {
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.right {
+  max-width: 60%;
+  margin: 40px;
+}
+
+footer {
+  display: flex;
+}
+
+.links {
+  display: flex;
+}
+
+.bottomlinks {
+  font-size: 30px;
+  margin: 30px;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
